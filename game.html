@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Crystal Collector</title>
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	
+</head>
+<body>
+	<div class="site-wrapper">
+
+	<!-- HEADER BANNER WITH NAME -->
+		<div class="row">
+			<div class="col-lg-12">
+				<a href="index.html" class="btn btn-lg btn-secondary">
+					<span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+					Back to Rules</a>
+				<div id="crystal-header">
+					<h1 id="crystal-title">CRYSTAL COLLECTOR</h1>
+				</div>
+			</div>
+		</div>
+
+		<div id="game-wrapper">
+
+		<!-- ROW 1: 2 Crystals -->
+			<div class="row">
+				<div class="col-lg-3">
+					<img class="crystals" src="images/Amethyst.png" id="jewel-1">
+					<img class="crystals" src="images/emerald.png" id="jewel-2">
+				</div>
+
+
+				<div class="col-lg-6">
+					<div class="row">
+
+						<div class="col-lg-6">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3>User Total</h3>
+								</div>
+								<div class="panel-body">
+									<div id="cummulativeGuess">0</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-lg-6">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3>Crystal Depth</h3>
+								</div>
+								<div class="panel-body">
+									<div id="crystalDepth"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<img src="images/Bucket.png" id="jackpot">
+					<div class="row">
+
+						<div class="col-lg-6">
+							<div class="panel panel-success">
+								<div class="panel-heading">
+									<h3>WINS</h3>
+								</div>
+								<div class="panel-body">
+									<div id="scoreWins">0</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="panel panel-danger">
+								<div class="panel-heading">
+									<h3>LOSSES</h3>
+								</div>
+								<div class="panel-body">
+									<div id="scoreLosses">0</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3">
+					<img class="crystals" src="images/redGem1.png" id="jewel-3">
+					<img class="crystals" src="images/Sapphire.png" id="jewel-4">
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
