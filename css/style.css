@@ -5,6 +5,53 @@
 	margin: 1pt;
 }
 
+.crystals {
+  height: 130pt;
+  margin-bottom: 30pt
+}
+
+#jewel-1, #jewel-2 {
+  float:  right;
+}
+
+#jewel-3, #jewel-4 {
+  float:  left;
+}
+
+
+#back-button:hover {
+  text-decoration: underline
+}
+
+#crystal-title {
+  padding: 20pt;
+}
+
+.panel {
+  margin: 20pt
+}
+
+#back-button {
+  z-index: 1;
+}
+
+#crystal-header {
+  z-index: -1;
+}
+
+.titleHeader {
+  text-align: left;
+}
+
+.footer{
+  text-align: left;
+}
+
+#game-footer {
+  padding: 20pt;
+}
+
+
 
 
 

@@ -27,31 +27,42 @@ console.log(depth);
 $('#jewel-1').click(function() {
 	cummUserGuess = jewelArray[0] + cummUserGuess;
 	$('#cummulativeGuess').html(cummUserGuess);
+	console.log(cummUserGuess);
+	score();
 });
 
 $('#jewel-2').click(function() {
 	cummUserGuess = jewelArray[1] + cummUserGuess;
 	$('#cummulativeGuess').html(cummUserGuess);
+	score();
 });
 
 $('#jewel-3').click(function() {
 	cummUserGuess = jewelArray[2] + cummUserGuess;
 	$('#cummulativeGuess').html(cummUserGuess);
+	score();
 });
 
 $('#jewel-4').click(function() {
 	cummUserGuess = jewelArray[3] + cummUserGuess;
 	$('#cummulativeGuess').html(cummUserGuess);
+	score();
 });
 
-if (cummUserGuess===depth){
+
+function score() {
+	if (cummUserGuess===depth) {
 	alert("CRYSTAL FOUND!");
 	wins++;
+	$('#scoreWins').html(wins);
 	cummUserGuess=0;
 	guessThatNumber();
-} else if (cummUserGuess>depth){
-	alert('Depth overshot!  Crystal broken!  Try again');
+} else if (cummUserGuess>depth) {
+	alert('Depth overshot!  Crystal broken!  Try again.');
 	losses++;
+	$('#scoreLosses').html(losses);
 	cummUserGuess=0;
 	guessThatNumber();
 };
+}
+
